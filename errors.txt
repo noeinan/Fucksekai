@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/code/multiverse-generator-screen.rpy", line 74: expected 'in' not found.
+    for i < top_artificial_dimensions_number:
+          ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Mon Apr  4 10:35:23 2022

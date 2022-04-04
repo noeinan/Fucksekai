@@ -1,14 +1,14 @@
-Sun Apr  3 19:08:07 2022
+Sun Apr  3 21:23:38 2022
 Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
-Loader init took 0.01s
+Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata. took 0.00s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.04s
@@ -32,3 +32,3119 @@ Save screen analysis took 0.00s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transform.py", line 733, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/im.py", line 625, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 287, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 706, in load
+    raise e
+IOError: Couldn't find file 'gui/multiverse/button_bg_%s.png'.
+
+While loading <'Image' u'gui/multiverse/button_bg_%s.png'>:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+IOError: Couldn't find file 'gui/multiverse/button_bg_%s.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 73.25s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transform.py", line 733, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/im.py", line 625, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 287, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 706, in load
+    raise e
+IOError: Couldn't find file 'gui/multiverse/button_bg_%s.png'.
+
+While loading <'Image' u'gui/multiverse/button_bg_%s.png'>:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+IOError: Couldn't find file 'gui/multiverse/button_bg_%s.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 85.64s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 103.69s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 111.60s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.28s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 118.02s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 153.30s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 181.37s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 196.90s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.04s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 209.37s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 226.44s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 240.33s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 249.79s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 262.25s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 271.72s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 320.99s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transform.py", line 733, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/im.py", line 625, in render
+    return cache.get(self, render=True)
+  File "renpy/display/im.py", line 287, in get
+    surf = image.load()
+  File "renpy/display/im.py", line 706, in load
+    raise e
+IOError: Couldn't find file 'gui/multiverse/button_bg.png'.
+
+While loading <'Image' u'gui/multiverse/button_bg.png'>:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+IOError: Couldn't find file 'gui/multiverse/button_bg.png'.
+Resetting cache.
+Bootstrap to the start of init.init took 424.31s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 485.32s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 40, in <module>
+    top_artificial_dimensions_list = random.choices(top_artificial_dimensions_variants, weights=[top_artificial_zero_chance,top_artificial_one_chance,top_artificial_two_chance,top_artificial_three_chance,top_artificial_four_chance,top_artificial_five_chance], k=1)
+AttributeError: 'module' object has no attribute 'choices'
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "game/code/multiverse-generator-screen.rpy", line 40, in <module>
+    top_artificial_dimensions_list = random.choices(top_artificial_dimensions_variants, weights=[top_artificial_zero_chance,top_artificial_one_chance,top_artificial_two_chance,top_artificial_three_chance,top_artificial_four_chance,top_artificial_five_chance], k=1)
+AttributeError: 'module' object has no attribute 'choices'
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 40, in <module>
+    top_artificial_dimensions_list = random.choices(top_artificial_dimensions_variants, weights=[top_artificial_zero_chance,top_artificial_one_chance,top_artificial_two_chance,top_artificial_three_chance,top_artificial_four_chance,top_artificial_five_chance], k=1)
+AttributeError: 'module' object has no attribute 'choices'
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "game/code/multiverse-generator-screen.rpy", line 40, in <module>
+    top_artificial_dimensions_list = random.choices(top_artificial_dimensions_variants, weights=[top_artificial_zero_chance,top_artificial_one_chance,top_artificial_two_chance,top_artificial_three_chance,top_artificial_four_chance,top_artificial_five_chance], k=1)
+AttributeError: 'module' object has no attribute 'choices'
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+Resetting cache.
+Bootstrap to the start of init.init took 4073.66s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = NonUniformRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 33: expected statement.
+    for i in range(14):
+          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.36s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4082.94s
+Early init took 0.00s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = NonUniformRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 33: expected statement.
+    for i in range(1):
+          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.32s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4107.22s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = NonUniformRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 33: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4140.54s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = NonUniformRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 34: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.35s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4144.35s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = NonUniformRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 34: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.33s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4254.36s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = WeightedRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 34: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4256.07s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = WeightedRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 34: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4322.56s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 29: python block expects a non-empty block.
+    python:
+           ^
+
+File "game/code/multiverse-generator-screen.rpy", line 31: expected statement.
+    n = WeightedRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+      ^
+
+File "game/code/multiverse-generator-screen.rpy", line 34: expected statement.
+    top_artificial_number = n.pick()
+                          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.31s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4405.59s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 31, in <module>
+    n = WeightedRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+NameError: name 'WeightedRandom' is not defined
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 29, in script
+    python:
+  File "game/code/multiverse-generator-screen.rpy", line 31, in <module>
+    n = WeightedRandom( [('0', 50), ('1',25), ('2',10), ('3',8), ('4',6), ('5',1)] )
+NameError: name 'WeightedRandom' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 4418.01s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4468.38s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 67, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    if top_artificial_dimensions_number > 0:
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    imagebutton auto "gui/multiverse/dimension_top_artificial_base_%s.png" xpos 640 ypos 0 focus_mask True action MainMenu()
+  File "renpy/ui.py", line 951, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "renpy/ui.py", line 945, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_top_artificial_base_%s.png').
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 67, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    if top_artificial_dimensions_number > 0:
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    imagebutton auto "gui/multiverse/dimension_top_artificial_base_%s.png" xpos 640 ypos 0 focus_mask True action MainMenu()
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_top_artificial_base_%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 4547.08s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 45, in execute
+    imagebutton auto "gui/multiverse/dimension_bottom-artificial_base_%s.png" xpos 640 ypos 660 focus_mask True action MainMenu()
+  File "renpy/ui.py", line 951, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "renpy/ui.py", line 945, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_bottom-artificial_base_%s.png').
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 38, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 45, in execute
+    imagebutton auto "gui/multiverse/dimension_bottom-artificial_base_%s.png" xpos 640 ypos 660 focus_mask True action MainMenu()
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_bottom-artificial_base_%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 4579.06s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4596.03s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4620.53s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4633.02s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4651.59s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4661.02s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4667.37s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4675.35s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4681.79s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4703.37s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.23s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4720.41s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4738.97s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4748.38s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4762.32s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 47288.85s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.05s
+Loading script took 0.70s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.09s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 47295.26s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 47462.24s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 74: expected 'in' not found.
+    for i < top_artificial_dimensions_number:
+          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 47489.59s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.11s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 47505.07s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/code/multiverse-generator-screen.rpy", line 74: expected 'in' not found.
+    for i < top_artificial_dimensions_number:
+          ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.32s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 47595.58s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.02s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 47685.06s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 47704.39s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 41, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 70, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 74, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 47941.91s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 47951.45s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.22s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 42, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 71, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 75, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
+Resetting cache.
+Bootstrap to the start of init.init took 48003.30s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\Fucksekai':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 72, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 76, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 76, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "renpy/python.py", line 1052, in revertable_range
+    return RevertableList(range(*args))
+TypeError: an integer is required
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 43, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 72, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 76, in execute
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+  File "game/code/multiverse-generator-screen.rpy", line 76, in <module>
+    for i in range (top_artificial_dimensions_number) < top_artificial_dimensions_number:
+TypeError: an integer is required
