@@ -54,34 +54,46 @@ screen multiverse_generator():
     add "#ffffff"
 
     hbox:
+        xalign 0.54 yalign 0.98
+        spacing -250
 
-        imagebutton auto "gui/multiverse/dimension_bottom_artificial_base_%s.png" xpos 640 ypos 660 focus_mask True action MainMenu()
-
-    hbox:
-
-        imagebutton auto "gui/multiverse/dimension_cthonic_base_%s.png" xpos 640 ypos 545 focus_mask True action MainMenu()
+        imagebutton auto "gui/multiverse/dimension_bottom_artificial_base_%s.png" xalign 0.5 yalign 1.0 focus_mask True action MainMenu()
 
     hbox:
+        xalign 0.52 yalign 0.75
+        spacing -250
 
-        imagebutton auto "gui/multiverse/dimension_bottom_spiritual_base_%s.png" xpos 640 ypos 490 focus_mask True action MainMenu()
-
-    hbox:
-
-        imagebutton auto "gui/multiverse/dimension_terrestrial_base_%s.png" xpos 640 ypos 460 focus_mask True action MainMenu()
+        imagebutton auto "gui/multiverse/dimension_cthonic_base_%s.png" xalign 0.5 yalign 0.8 focus_mask True action MainMenu()
 
     hbox:
+        xalign 0.5 yalign 0.6
+        spacing -250
 
-        imagebutton auto "gui/multiverse/dimension_top_spiritual_base_%s.png" xpos 640 ypos 360 focus_mask True action MainMenu()
-
-    hbox:
-
-        imagebutton auto "gui/multiverse/dimension_celestial_base_%s.png" xpos 640 ypos 215 focus_mask True action MainMenu()
+        imagebutton auto "gui/multiverse/dimension_bottom_spiritual_base_%s.png" xalign 0.5 yalign 0.6 focus_mask True action MainMenu()
 
     hbox:
-        xpos 20 ypos 0
-        spacing -200
+        xalign 0.5 yalign 0.5
+        spacing -250
+
+        imagebutton auto "gui/multiverse/dimension_terrestrial_base_%s.png" xalign 0.5 yalign 0.5 focus_mask True action MainMenu()
+
+    hbox:
+        xalign 0.5 yalign 0.4
+        spacing -250
+
+        imagebutton auto "gui/multiverse/dimension_top_spiritual_base_%s.png" xalign 0.5 yalign 0.4 focus_mask True action MainMenu()
+
+    hbox:
+        xalign 0.48 yalign 0.25
+        spacing -250
+
+        imagebutton auto "gui/multiverse/dimension_celestial_base_%s.png" xalign 0.5 yalign 0.2 focus_mask True action MainMenu()
+
+    hbox:
+        xalign 0.46 yalign 0.0
+        spacing -250
 
         for i in range (top_artificial_dimensions_number):
             imagebutton auto "gui/multiverse/dimension_top_artificial_base_%s.png" focus_mask True action MainMenu()
 
-    imagebutton auto "gui/multiverse/button_reroll_%s.png" xpos 1710 ypos 10 focus_mask True action Jump("multiverse_reroll")
+    imagebutton auto "gui/multiverse/button_reroll_%s.png" xalign 0.9 yalign 0.0 focus_mask True action Jump("multiverse_reroll")
