@@ -143,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "PopulationGenerator-1649128236"
+define config.save_directory = "PopulationGenerator-1649872966"
 
 
 ## Icon ########################################################################
