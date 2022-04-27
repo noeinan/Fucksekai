@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/code/biome-generator-screen.rpy", line 24: u'jump' is not a keyword argument or valid child for the imagebutton statement.
+    imagebutton auto "gui/button/environment_screen/west_alfisol_%s.png" focus_mask True action jump environment
+                                                                                                    ^
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Wed Apr 27 22:34:01 2022

@@ -59,19 +59,19 @@ screen desert_generator():
 
     hbox xalign 0.05 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Arid_Desert_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Arid_Desert_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.28 yalign 0.82:
         
-        imagebutton auto "gui/button/biome/Coastal_Desert_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Coastal_Desert_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.95 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Cold_Desert_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Cold_Desert_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.72 yalign 0.82:
         
-        imagebutton auto "gui/button/biome/Semi-Arid_Desert_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Semi-Arid_Desert_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
 screen forest_generator():
     tag generator
@@ -82,15 +82,15 @@ screen forest_generator():
 
     hbox xalign 0.05 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Boreal_Forest_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Boreal_Forest_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.5 yalign 0.85:
         
-        imagebutton auto "gui/button/biome/Temperate_Forest_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Temperate_Forest_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.95 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Tropical_Forest_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Tropical_Forest_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
 screen grassland_generator():
     tag generator
@@ -101,15 +101,15 @@ screen grassland_generator():
 
     hbox xalign 0.05 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Steppe_Grassland_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Steppe_Grassland_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.5 yalign 0.85:
         
-        imagebutton auto "gui/button/biome/Temperate_Grassland_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Temperate_Grassland_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.95 yalign 0.1:
         
-        imagebutton auto "gui/button/biome/Tropical_Grassland_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Tropical_Grassland_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
 screen tundra_generator():
     tag generator
@@ -120,11 +120,11 @@ screen tundra_generator():
 
     hbox xalign 0.1 yalign 0.5:
         
-        imagebutton auto "gui/button/biome/Alpine_Tundra_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Alpine_Tundra_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.9 yalign 0.5:
 
-        imagebutton auto "gui/button/biome/Arctic_Tundra_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Arctic_Tundra_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
 screen aquatic_generator():
     tag generator
@@ -135,8 +135,8 @@ screen aquatic_generator():
 
     hbox xalign 0.1 yalign 0.5:
         
-        imagebutton auto "gui/button/biome/Freshwater_Aquatic_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Freshwater_Aquatic_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
 
     hbox xalign 0.9 yalign 0.5:
 
-        imagebutton auto "gui/button/biome/Marine_Aquatic_Placeholder_Button_%s.png" focus_mask True action MainMenu()
+        imagebutton auto "gui/button/biome/Marine_Aquatic_Placeholder_Button_%s.png" focus_mask True action Jump("environment")
