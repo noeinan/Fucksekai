@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/code/environment-generator-screen.rpy", line 29: u'x' is not a keyword argument or valid child for the for statement.
-    x = n / 8
-     ^
+File "game/code/environment-generator-screen.rpy", line 36: u'env_tile_pick' is not a keyword argument or valid child for the for statement.
+    env_tile_pick(i)
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Apr 28 15:19:35 2022
+Thu Apr 28 15:56:25 2022

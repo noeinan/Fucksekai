@@ -24,14 +24,15 @@ screen environment_generator():
 
     add "#ffffff"
 
-    add "gui/button/environment_screen/soil_map_placeholder.png"
+    #add "gui/button/environment_screen/soil_map_placeholder.png"
 
-    for n in range(1, 8):
-        python:
-            x = n / 8
-            y = 0
-            for i in range (0, 3):
-                env_tile_pick(i)
-        hbox xalign x yalign y:
+    hbox:
             
-                imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+        for n in range(0, 8):
+            python:
+                x = 0.125 * n
+                y = 0
+            for i in range (0, 3):
+                python:
+                    env_tile_pick(i)
+                imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator") xalign x yalign y
