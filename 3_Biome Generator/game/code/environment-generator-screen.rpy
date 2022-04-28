@@ -5,20 +5,15 @@ label environment_loop:
 label environment:
 
     python:
-        import os
-
-        base_path = "\\game\\gui\\button\\environment_screen\\"
-        path = sys.path[0] + base_path
-        files = os.listdir(path)
-        selected_path = base_path + renpy.random.choice(files)
-        formatted_path = selected_path.split("game\\")[1]
-        formatted_path = formatted_path.replace("idle.png", "%s.png")
-
-        #if d.endswith('fun'):
-            
-
         # updating global variables
         current_loc = "environment void"
+
+        def env_tile_pick(tile_dir):
+            global idlei, hoveri
+            selected_path = base_path.split("game\\")[1] + renpy.random.choice(env_tiles[tile_dir])
+            selected_path = selected_path.replace("\\", "/")
+            idlei = selected_path + "_idle.png"
+            hoveri = selected_path + "_hover.png"
 
     show screen environment_generator()
 
@@ -31,14 +26,12 @@ screen environment_generator():
 
     add "gui/button/environment_screen/soil_map_placeholder.png"
 
-    python:
-        x = 0
-        y = 0
-
-    #hbox xalign x yalign y:
-        
-        #imagebutton auto "gui/button/environment_screen/west_alfisol_%s.png" focus_mask True action Show("terrestrial_generator")
-
-    hbox xalign x yalign y:
-        
-        imagebutton auto formatted_path focus_mask True action Show("terrestrial_generator")
+    for n in range(1, 8):
+        python:
+            x = n / 8
+            y = 0
+            for i in range (0, 3):
+                env_tile_pick(i)
+        hbox xalign x yalign y:
+            
+                imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")

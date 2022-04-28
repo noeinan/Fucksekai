@@ -5,17 +5,21 @@ While running game code:
     $ renpy.pause()
   File "game/code/environment-generator-screen.rpy", line 2, in <module>
     $ renpy.pause()
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
+  File "game/code/environment-generator-screen.rpy", line 21, in execute
     screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
+  File "game/code/environment-generator-screen.rpy", line 21, in execute
     screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 42, in execute
+  File "game/code/environment-generator-screen.rpy", line 28, in execute
+    for n in range(1, 8):
+  File "game/code/environment-generator-screen.rpy", line 34, in execute
     hbox xalign x yalign y:
-  File "game/code/environment-generator-screen.rpy", line 44, in execute
-    imagebutton auto formatted_path action Show("terrestrial_generator")
-  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
-    rv = auto_param % variant
-TypeError: not all arguments converted during string formatting
+  File "game/code/environment-generator-screen.rpy", line 36, in execute
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+  File "game/code/environment-generator-screen.rpy", line 36, in keywords
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+  File "game/code/environment-generator-screen.rpy", line 36, in <module>
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+NameError: name 'idlei' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -50,23 +54,23 @@ Full traceback:
     self.update()
   File "renpy/display/screen.py", line 637, in update
     self.screen.function(**self.scope)
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
+  File "game/code/environment-generator-screen.rpy", line 21, in execute
     screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
+  File "game/code/environment-generator-screen.rpy", line 21, in execute
     screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 42, in execute
+  File "game/code/environment-generator-screen.rpy", line 28, in execute
+    for n in range(1, 8):
+  File "game/code/environment-generator-screen.rpy", line 34, in execute
     hbox xalign x yalign y:
-  File "game/code/environment-generator-screen.rpy", line 44, in execute
-    imagebutton auto formatted_path action Show("terrestrial_generator")
-  File "renpy/ui.py", line 951, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "renpy/ui.py", line 939, in choice
-    rv = renpy.config.imagemap_auto_function(auto, name)
-  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
-    rv = auto_param % variant
-TypeError: not all arguments converted during string formatting
+  File "game/code/environment-generator-screen.rpy", line 36, in execute
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+  File "game/code/environment-generator-screen.rpy", line 36, in keywords
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+  File "game/code/environment-generator-screen.rpy", line 36, in <module>
+    imagebutton idle idlei hover hoveri focus_mask True action Show("terrestrial_generator")
+NameError: name 'idlei' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Biome Generator 1.0
-Thu Apr 28 00:59:07 2022
+Thu Apr 28 15:20:29 2022

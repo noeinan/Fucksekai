@@ -1,4 +1,4 @@
-Thu Apr 28 00:59:03 2022
+Thu Apr 28 15:22:03 2022
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
@@ -6,12 +6,12 @@ Ren'Py 7.4.11.2266
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.02s
-Loading error handling took 0.05s
-Loading script took 0.26s
+Loading error handling took 0.02s
+Loading script took 0.13s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
+Running init code took 0.05s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -23,19 +23,19 @@ Initial gc. took 0.02s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.28s
+Creating interface object took 0.27s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.03s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.09s
+Interface start took 0.08s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -47,67 +47,5 @@ Version: '4.6.0 NVIDIA 445.87'
 Display Info: None
 Screen sizes: virtual=(3360, 1890) physical=(1733, 975) drawable=(1733, 975)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/code/environment-generator-screen.rpy", line 2, in script
-    $ renpy.pause()
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/code/environment-generator-screen.rpy", line 2, in <module>
-    $ renpy.pause()
-  File "renpy/exports.py", line 1563, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3325, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3737, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 436, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3737, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 447, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 637, in update
-    self.screen.function(**self.scope)
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
-    screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
-    screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 42, in execute
-    hbox xalign x yalign y:
-  File "game/code/environment-generator-screen.rpy", line 44, in execute
-    imagebutton auto formatted_path action Show("terrestrial_generator")
-  File "renpy/ui.py", line 951, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "renpy/ui.py", line 939, in choice
-    rv = renpy.config.imagemap_auto_function(auto, name)
-  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
-    rv = auto_param % variant
-TypeError: not all arguments converted during string formatting
-
-While running game code:
-  File "game/code/environment-generator-screen.rpy", line 2, in script
-    $ renpy.pause()
-  File "game/code/environment-generator-screen.rpy", line 2, in <module>
-    $ renpy.pause()
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
-    screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 27, in execute
-    screen environment_generator():
-  File "game/code/environment-generator-screen.rpy", line 42, in execute
-    hbox xalign x yalign y:
-  File "game/code/environment-generator-screen.rpy", line 44, in execute
-    imagebutton auto formatted_path action Show("terrestrial_generator")
-  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
-    rv = auto_param % variant
-TypeError: not all arguments converted during string formatting
+Screen sizes: virtual=(3360, 1890) physical=(1920, 1001) drawable=(1920, 1001)
+Maximum texture size: 4096x4096
