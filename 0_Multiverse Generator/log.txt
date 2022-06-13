@@ -1,40 +1,149 @@
-Wed Apr 13 21:17:10 2022
+Sun Jun 12 19:27:49 2022
 Windows-10-10.0.22000
 Ren'Py 7.4.11.2266
  
 
 Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.01s
+Loader init took 0.04s
+Loading error handling took 0.03s
+Loading script took 0.16s
+Loading save slot metadata. took 0.06s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.27s
+Creating interface object took 0.26s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.09s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'NVIDIA Corporation'
+Renderer: 'GeForce GTX 1660 Ti/PCIe/SSE2'
+Version: '4.6.0 NVIDIA 462.31'
+Display Info: None
+Screen sizes: virtual=(3360, 1890) physical=(1733, 975) drawable=(1733, 975)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3737, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 568, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 436, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3737, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 447, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 637, in update
+    self.screen.function(**self.scope)
+  File "game/code/multiverse-generator-screen.rpy", line 167, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 167, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 179, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 183, in execute
+    for i in range (bottom_divine_dimensions_number):
+  File "game/code/multiverse-generator-screen.rpy", line 184, in execute
+    imagebutton auto "gui/multiverse/dimension_bottom_divine_base_%s.png" focus_mask True action MainMenu()
+  File "renpy/ui.py", line 951, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "renpy/ui.py", line 945, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_bottom_divine_base_%s.png').
+
+While running game code:
+  File "game/code/multiverse-generator-screen.rpy", line 16, in script
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 16, in <module>
+    $ renpy.pause()
+  File "game/code/multiverse-generator-screen.rpy", line 167, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 167, in execute
+    screen multiverse_generator():
+  File "game/code/multiverse-generator-screen.rpy", line 179, in execute
+    hbox:
+  File "game/code/multiverse-generator-screen.rpy", line 183, in execute
+    for i in range (bottom_divine_dimensions_number):
+  File "game/code/multiverse-generator-screen.rpy", line 184, in execute
+    imagebutton auto "gui/multiverse/dimension_bottom_divine_base_%s.png" focus_mask True action MainMenu()
+Exception: Imagebutton does not have a idle image. (auto=u'gui/multiverse/dimension_bottom_divine_base_%s.png').
+Resetting cache.
+Bootstrap to the start of init.init took 174.15s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.13s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\anlat\\AppData\\Roaming/RenPy/backups\\0_Multiverse Generator':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.25s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)

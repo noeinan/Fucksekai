@@ -174,48 +174,48 @@ screen multiverse_generator():
         spacing -250
 
         for i in range (bottom_artificial_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_bottom_artificial_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_bottom_artificial_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.52 yalign 0.75
         spacing -50
 
         for i in range (bottom_divine_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_bottom_divine_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_bottom_divine_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.5 yalign 0.6
         spacing -250
 
         for i in range (bottom_spiritual_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_bottom_spiritual_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_bottom_spiritual_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.5 yalign 0.5
         spacing -50
 
         for i in range (terrestrial_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_terrestrial_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_terrestrial_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.5 yalign 0.4
         spacing -250
 
         for i in range (top_spiritual_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_top_spiritual_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_top_spiritual_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.48 yalign 0.25
         spacing -50
 
         for i in range (top_divine_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_top_divine_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_top_divine_base_%s.png" focus_mask True action MainMenu()
 
     hbox:
         xalign 0.46 yalign 0.0
         spacing -250
 
         for i in range (top_artificial_dimensions_number):
-            imagebutton auto "gui/multiverse/dimension_top_artificial_base_%s.png" focus_mask True action MainMenu()
+            imagebutton auto "gui/button/multiverse/dimension_top_artificial_base_%s.png" focus_mask True action MainMenu()
 
-    imagebutton auto "gui/multiverse/button_reroll_%s.png" xalign 1.0 yalign 0.0 focus_mask True action Jump("multiverse_reroll")
+    imagebutton auto "gui/button/multiverse/button_reroll_%s.png" xalign 1.0 yalign 0.0 focus_mask True action Jump("multiverse_reroll")
