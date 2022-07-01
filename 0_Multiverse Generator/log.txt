@@ -155,3 +155,13 @@ Version: '4.6.0 NVIDIA 462.31'
 Display Info: None
 Screen sizes: virtual=(3360, 1890) physical=(1733, 975) drawable=(1733, 975)
 Maximum texture size: 4096x4096
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
+controller: '030000004c050000e60c000000016800' 'PS5 Controller' 1L
